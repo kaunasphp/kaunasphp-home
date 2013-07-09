@@ -1,0 +1,57 @@
+layout: default.twig
+
+events:
+
+    - name: "KaunasPHP v.2"
+      date: 2013-02-27 19:00
+      facebook: https://www.facebook.com/events/513333235377453/
+      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v02
+      speakers:
+        - name: Mažvydas Skuodas, Senior Software Engineer, Technologijų parkas
+          title: PHP šių dienų žodynėlis
+          url: http://lt.linkedin.com/pub/ma%C5%BEvydas-skuodas/66/2b5/805
+        - name: Darius Leskauskas, Web developer, Informacinių Technologijų Organizacija
+          title: HTML5 mobile apps. Tips & tricks
+          url: http://www.linkedin.com/pub/darius-leskauskas/47/418/a77
+
+    - name: "KaunasPHP v.1"
+      date: 2013-01-09 19:00
+      facebook: https://www.facebook.com/events/531061440260951/
+      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v01
+      speakers:
+        - name: Alfonsas Cirtautas - Software Developer, OXID eSales AG
+          title: Composer - PHP įrankis trečių šalių bibliotekų ir priklausomybių valdymui.
+          url: http://www.linkedin.com/pub/alfonsas-cirtautas/4b/45/1b4
+        - name: Šarūnas Atkočiūnas - Co-owner and CTO, ITMC Consulting
+          title: Greitas aplikacijų kūrimas su Silex, SF Components ir Twitter Bootstap
+          url: http://www.linkedin.com/pub/%C5%A1ar%C5%ABnas-atko%C4%8Di%C5%ABnas/50/a5a/3aa
+        - name: Dominykas Blyžė - Senior front-end engineer, Ammado
+          title: Tai ką dabar darysime su node.js?..
+          url: http://www.linkedin.com/in/dominykas
+
+---
+
+{% for key, event in this.events %}
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse{{ key }}">
+                {{ event.name }} ({{ event.date }})
+            </a>
+        </div>
+        <div id="collapse{{ key }}" class="accordion-body collapse {% if key == 0 %}{{ 'in' }}{% endif %}">
+            <div class="accordion-inner">
+                <ul>
+                    {% for speaker in event.speakers %}
+                    <li>{{ speaker.title }}
+                        <ul>
+                            <li><a href="{{ speaker.url }}">{{ speaker.name }}</a></li>
+                        </ul>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <a href="{{ event.facebook }}" target="_blank"><img src="media/img/facebook.png" /></a>
+                <a href="{{ event.github }}" target="_blank"><img src="media/img/github-icon.jpg" /></a>
+            </div>
+        </div>
+    </div>
+{% endfor %}
