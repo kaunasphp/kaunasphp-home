@@ -1,4 +1,4 @@
-Vilniusphp.lt homepage
+Kaunasphp.lt homepage
 ======================
 
 * Turite idėjų kaip patobulinti esamą UI - "Pull request";
