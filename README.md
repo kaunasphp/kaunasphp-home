@@ -12,7 +12,7 @@ Tinklapis naudoja [Phrozn](https://github.com/farazdagi/phrozn) įrankį statini
 1. Instaliavimas.
 
     ``` sh
-    git clone git@github.com:vilniusphp/home.git
+    git clone git@github.com:kaunasphp/kaunasphp-home.git
     cd home
     make
     ```
