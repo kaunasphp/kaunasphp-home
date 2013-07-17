@@ -4,14 +4,14 @@ OUTPUT_DIR = public_html
 PHR = vendor/farazdagi/phrozn/bin/phrozn.php
 
 build: vendor
-	mkdir -p $(OUTPUT_DIR) && $(PHR) up . $(OUTPUT_DIR)
+	mkdir -p $(OUTPUT_DIR) && php $(PHR) up . $(OUTPUT_DIR)
 
 composer.phar:
 	curl -s https://getcomposer.org/installer | php
 	touch composer.phar
 
 vendor: composer.phar
-	./composer.phar install
+	php ./composer.phar install
 	touch vendor
 
 clean:
