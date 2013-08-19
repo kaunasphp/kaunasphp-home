@@ -9,6 +9,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "farazdagi/phrozn" : "dev-dev"
+        "farazdagi/phrozn": "dev-master"
     }
 }
