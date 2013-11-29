@@ -1,6 +1,57 @@
 layout: default.twig
 
 events:
+    - name: "KaunasPHP v.7"
+      date: 2013-10-16 19:00
+      facebook: https://www.facebook.com/events/599388230102897/
+      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v7
+      speakers:
+        - name: Marijus Kilmanas ir Artūras Šmorgun
+          title: Kas yra kokybė? Kodėl ji turi man rūpėti? Kaip jos pasiekti? Kaip ją išlaikyti?
+
+    - name: "KaunasPHP v.6"
+      date: 2013-09-18 19:00
+      facebook: https://www.facebook.com/events/1377970999099507/
+      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v6
+      speakers:
+        - name: Gediminas Morkevičius
+          title: Being dangerous with GIT
+        - name: Mažvydas Skuodas, Senior Software Engineer, Technologijų parkas
+          title: Kaip valdyti debesį su Amazon AWS
+
+    - name: "KaunasPHP v.5"
+      date: 2013-08-21 19:00
+      facebook: https://www.facebook.com/events/549066295159664/
+      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v5
+      speakers:
+        - name: Marijus Kilmanas, Software Engineer at Inviqa
+          title: Deliberate practice: Katas, Dojos and Senseis
+        - name: Alfonsas Cirtautas, Senior Software Developer at Callcredit Information Group
+          title: PHP 5.5 - Ar jau laikas?
+
+    - name: "KaunasPHP v.4"
+      date: 2013-06-26 19:00
+      facebook: https://www.facebook.com/events/513333235377453/
+      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v4
+      speakers:
+        - name: Kazimieras Butkus, Software Engineer, NFQ
+          title: CSS/JS minimizavimas, CSS sprites
+          url: http://www.linkedin.com/in/kazimierasbutkus
+        - name: Simonas Šerlinskas, Software Engineer, NFQ
+          title: Cloud infrastruktūra tavo kompiuteryje
+          url: http://simonas.info/
+
+    - name: "KaunasPHP v.3"
+      date: 2013-04-10 19:00
+      facebook: https://www.facebook.com/events/220686368072142/
+      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v3
+      speakers:
+        - name: Aivaras Spaičys, Software Engineer, NFQ
+          title: Doctrine ORM
+          url: http://www.linkedin.com/pub/aivaras-spaicys/3b/a6a/319
+        - name: Šarūnas Atkočiūnas, Freelancer Software Developer
+          title: Intro to Symfony2 Forms
+          url: http://lt.linkedin.com/pub/%C5%A1ar%C5%ABnas-atko%C4%8Di%C5%ABnas/50/a5a/3aa
 
     - name: "KaunasPHP v.4"
       date: 2013-06-26 19:00
@@ -25,7 +76,7 @@ events:
     - name: "KaunasPHP v.2"
       date: 2013-02-27 19:00
       facebook: https://www.facebook.com/events/513333235377453/
-      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v02
+      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v2
       speakers:
         - name: Mažvydas Skuodas, Senior Software Engineer, Technologijų parkas
           title: PHP šių dienų žodynėlis
@@ -37,7 +88,7 @@ events:
     - name: "KaunasPHP v.1"
       date: 2013-01-09 19:00
       facebook: https://www.facebook.com/events/531061440260951/
-      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v01
+      github: https://github.com/kaunasphp/kaunasphp-meetups/tree/master/KaunasPHP.v1
       speakers:
         - name: Alfonsas Cirtautas - Software Developer, OXID eSales AG
           title: Composer - PHP įrankis trečių šalių bibliotekų ir priklausomybių valdymui.
@@ -52,21 +103,23 @@ events:
 ---
 
 {% for key, event in this.events %}
-    <div class="accordion-group">
-        <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse{{ key }}">
-                {{ event.name }} ({{ event.date }})
-            </a>
+    <div class="panel">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse{{ key }}">
+                    {{ event.name }} ({{ event.date }})
+                </a>
+            </h4>
         </div>
-        <div id="collapse{{ key }}" class="accordion-body collapse {% if key == 0 %}{{ 'in' }}{% endif %}">
-            <div class="accordion-inner">
+        <div id="collapse{{ key }}" class="panel-collapse collapse {% if key == 0 %}{{ 'in' }}{% endif %}">
+            <div class="panel-body">
                 <ul>
                     {% for speaker in event.speakers %}
-                    <li>{{ speaker.title }}
-                        <ul>
-                            <li><a href="{{ speaker.url }}">{{ speaker.name }}</a></li>
-                        </ul>
-                    </li>
+                        <li>{{ speaker.title }}
+                            <ul>
+                                <li><a href="{{ speaker.url }}">{{ speaker.name }}</a></li>
+                            </ul>
+                        </li>
                     {% endfor %}
                 </ul>
                 <a href="{{ event.facebook }}" target="_blank"><img src="media/img/facebook.png" /></a>

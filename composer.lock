@@ -1,18 +1,22 @@
 {
-    "hash": "a9bff4f4a6a4e4fff84092217b7938bb",
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "d58fc16ca686b2edc301b0031a7979f8",
     "packages": [
         {
             "name": "farazdagi/phrozn",
-            "version": "dev-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/farazdagi/phrozn.git",
-                "reference": "884f812b51d446dcc7948a0cabd7b48dc5ace69d"
+                "reference": "754857cef728a514c3504818b1b6354ac518b384"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/farazdagi/phrozn/zipball/884f812b51d446dcc7948a0cabd7b48dc5ace69d",
-                "reference": "884f812b51d446dcc7948a0cabd7b48dc5ace69d",
+                "url": "https://api.github.com/repos/farazdagi/phrozn/zipball/754857cef728a514c3504818b1b6354ac518b384",
+                "reference": "754857cef728a514c3504818b1b6354ac518b384",
                 "shasum": ""
             },
             "require": {
@@ -32,7 +36,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Static Site Generator for PHP",
-            "time": "2013-02-14 08:34:00"
+            "time": "2013-06-27 07:29:17"
         },
         {
             "name": "pear/Console_Color2",
@@ -241,12 +245,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/PEAR_Exception.git",
-                "reference": "34a32e5abdc8eeaaf148a2a8732af82db76ff07e"
+                "reference": "2f560fae7ce41910f1deb7337e8951e35b413f1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/34a32e5abdc8eeaaf148a2a8732af82db76ff07e",
-                "reference": "34a32e5abdc8eeaaf148a2a8732af82db76ff07e",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/2f560fae7ce41910f1deb7337e8951e35b413f1e",
+                "reference": "2f560fae7ce41910f1deb7337e8951e35b413f1e",
                 "shasum": ""
             },
             "require": {
@@ -259,6 +263,9 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "."
+            ],
             "license": [
                 "BSD-3-Clause"
             ],
@@ -277,7 +284,7 @@
             "keywords": [
                 "exception"
             ],
-            "time": "2013-01-28 12:48:16"
+            "time": "2013-04-28 13:00:16"
         },
         {
             "name": "symfony/yaml",
@@ -286,12 +293,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "c508a879829976e30f05e16b96a7ed024ee82ce1"
+                "reference": "v2.0.24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/c508a879829976e30f05e16b96a7ed024ee82ce1",
-                "reference": "c508a879829976e30f05e16b96a7ed024ee82ce1",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/v2.0.24",
+                "reference": "v2.0.24",
                 "shasum": ""
             },
             "require": {
@@ -323,16 +330,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "dev-master",
+            "version": "v1.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "39d94faabcea7d60b90c2996d51e1b6691ab39d2"
+                "reference": "v1.12.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/39d94faabcea7d60b90c2996d51e1b6691ab39d2",
-                "reference": "39d94faabcea7d60b90c2996d51e1b6691ab39d2",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/v1.12.3",
+                "reference": "v1.12.3",
                 "shasum": ""
             },
             "require": {
@@ -368,7 +375,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-02-28 14:08:49"
+            "time": "2013-04-08 12:40:11"
         }
     ],
     "packages-dev": [
