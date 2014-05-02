@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d58fc16ca686b2edc301b0031a7979f8",
+    "hash": "cf26fd00131185bcce1d2e724139a3e5",
     "packages": [
         {
             "name": "farazdagi/phrozn",
@@ -39,125 +39,25 @@
             "time": "2013-06-27 07:29:17"
         },
         {
-            "name": "pear/Console_Color2",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pear/Console_Color2.git",
-                "reference": "771a5a4acc850ad874527798f60e030b8aa47dec"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pear/Console_Color2/zipball/771a5a4acc850ad874527798f60e030b8aa47dec",
-                "reference": "771a5a4acc850ad874527798f60e030b8aa47dec",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Console_Color2": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel O'Connor",
-                    "email": "daniel.oconnor@gmail.com",
-                    "role": "Pear Developer"
-                },
-                {
-                    "name": "Stefan Walk",
-                    "email": "et@php.net"
-                },
-                {
-                    "name": "Scott Mattocks",
-                    "email": "scottmattocks@php.net"
-                }
-            ],
-            "description": "This Class allows you to easily use ANSI console colors in your application.",
-            "homepage": "https://github.com/pear/Console_Color2",
-            "keywords": [
-                "console"
-            ],
-            "time": "2012-10-23 11:50:08"
-        },
-        {
-            "name": "pear/Console_Table",
-            "version": "dev-trunk",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pear/Console_Table.git",
-                "reference": "Console_Table-1.1.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pear/Console_Table/zipball/Console_Table-1.1.5",
-                "reference": "Console_Table-1.1.5",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=4.0.0"
-            },
-            "suggest": {
-                "pear/Console_Color": ">=0.0.4"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "Table.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD"
-            ],
-            "authors": [
-                {
-                    "name": "Jan Schneider",
-                    "homepage": "http://pear.php.net/user/yunosh"
-                },
-                {
-                    "name": "Tal Peer",
-                    "homepage": "http://pear.php.net/user/tal"
-                },
-                {
-                    "name": "Xavier Noguer",
-                    "homepage": "http://pear.php.net/user/xnoguer"
-                },
-                {
-                    "name": "Richard Heyes",
-                    "homepage": "http://pear.php.net/user/richard"
-                }
-            ],
-            "description": "Class that makes it easy to build console style tables.",
-            "homepage": "https://github.com/pear/Console_Table",
-            "keywords": [
-                "console"
-            ],
-            "time": "2012-12-07 14:43:01"
-        },
-        {
             "name": "pear/archive_tar",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "1.3.11"
+                "reference": "4b6c9065950582c0e9026fb6f4284ec30373eca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/1.3.11",
-                "reference": "1.3.11",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/4b6c9065950582c0e9026fb6f4284ec30373eca5",
+                "reference": "4b6c9065950582c0e9026fb6f4284ec30373eca5",
                 "shasum": ""
             },
             "require": {
+                "pear/pear_exception": "*",
                 "php": ">=4.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
             },
             "type": "library",
             "autoload": {
@@ -166,6 +66,9 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
             "license": [
                 "BSD-3-Clause"
             ],
@@ -189,7 +92,63 @@
                 "archive",
                 "tar"
             ],
-            "time": "2013-02-09 11:44:32"
+            "time": "2014-04-12 17:26:10"
+        },
+        {
+            "name": "pear/console_color2",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Console_Color2.git",
+                "reference": "e7cc88dc38253d7e7441bb58e0418ff5e5ff65b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Console_Color2/zipball/e7cc88dc38253d7e7441bb58e0418ff5e5ff65b7",
+                "reference": "e7cc88dc38253d7e7441bb58e0418ff5e5ff65b7",
+                "shasum": ""
+            },
+            "require": {
+                "pear/pear_exception": "*",
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Console": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel O'Connor",
+                    "email": "daniel.oconnor@gmail.com",
+                    "role": "Pear Developer"
+                },
+                {
+                    "name": "Stefan Walk",
+                    "email": "et@php.net"
+                },
+                {
+                    "name": "Scott Mattocks",
+                    "email": "scottmattocks@php.net"
+                }
+            ],
+            "description": "This Class allows you to easily use ANSI console colors in your application.",
+            "homepage": "https://github.com/pear/Console_Color2",
+            "keywords": [
+                "console"
+            ],
+            "time": "2014-02-21 08:53:10"
         },
         {
             "name": "pear/console_commandline",
@@ -197,22 +156,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Console_CommandLine.git",
-                "reference": "210b2532d3921bfca7720dfb1aba98150434f8be"
+                "reference": "f139acf31e60743ba3ebafbde287ec8658a27591"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Console_CommandLine/zipball/210b2532d3921bfca7720dfb1aba98150434f8be",
-                "reference": "210b2532d3921bfca7720dfb1aba98150434f8be",
+                "url": "https://api.github.com/repos/pear/Console_CommandLine/zipball/f139acf31e60743ba3ebafbde287ec8658a27591",
+                "reference": "f139acf31e60743ba3ebafbde287ec8658a27591",
                 "shasum": ""
             },
             "require": {
-                "pear/pear_exception": "dev-master",
+                "pear/pear_exception": "*",
                 "php": ">=5.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Console_CommandLine": ""
+                    "Console": "./"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -237,7 +199,62 @@
             "keywords": [
                 "console"
             ],
-            "time": "2013-02-02 21:07:53"
+            "time": "2014-04-12 16:57:03"
+        },
+        {
+            "name": "pear/console_table",
+            "version": "dev-trunk",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobLoach/Console_Table.git",
+                "reference": "b3d88acf17578c9785cda0daf8fce5c69860cb33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobLoach/Console_Table/zipball/b3d88acf17578c9785cda0daf8fce5c69860cb33",
+                "reference": "b3d88acf17578c9785cda0daf8fce5c69860cb33",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=4.3.10"
+            },
+            "suggest": {
+                "pear/Console_Color2": ">=0.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Table.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "homepage": "http://pear.php.net/user/yunosh"
+                },
+                {
+                    "name": "Tal Peer",
+                    "homepage": "http://pear.php.net/user/tal"
+                },
+                {
+                    "name": "Xavier Noguer",
+                    "homepage": "http://pear.php.net/user/xnoguer"
+                },
+                {
+                    "name": "Richard Heyes",
+                    "homepage": "http://pear.php.net/user/richard"
+                }
+            ],
+            "description": "Library that makes it easy to build console style tables.",
+            "homepage": "http://pear.php.net/package/Console_Table/",
+            "keywords": [
+                "console"
+            ],
+            "time": "2014-03-31 20:07:31"
         },
         {
             "name": "pear/pear_exception",
@@ -245,18 +262,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/PEAR_Exception.git",
-                "reference": "2f560fae7ce41910f1deb7337e8951e35b413f1e"
+                "reference": "d5a3e9597040dcc56a4a2053a605e07214951202"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/2f560fae7ce41910f1deb7337e8951e35b413f1e",
-                "reference": "2f560fae7ce41910f1deb7337e8951e35b413f1e",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/d5a3e9597040dcc56a4a2053a605e07214951202",
+                "reference": "d5a3e9597040dcc56a4a2053a605e07214951202",
                 "shasum": ""
             },
             "require": {
                 "php": ">=4.4.0"
             },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
             "type": "class",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "PEAR": ""
@@ -267,7 +292,7 @@
                 "."
             ],
             "license": [
-                "BSD-3-Clause"
+                "BSD-2-Clause"
             ],
             "authors": [
                 {
@@ -276,7 +301,8 @@
                 },
                 {
                     "name": "Greg Beaver",
-                    "email": "cellog@php.net"
+                    "email": "cellog@php.net",
+                    "role": "lead"
                 }
             ],
             "description": "The PEAR Exception base class.",
@@ -284,7 +310,7 @@
             "keywords": [
                 "exception"
             ],
-            "time": "2013-04-28 13:00:16"
+            "time": "2014-02-21 17:39:41"
         },
         {
             "name": "symfony/yaml",
@@ -293,12 +319,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "v2.0.24"
+                "reference": "c508a879829976e30f05e16b96a7ed024ee82ce1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/v2.0.24",
-                "reference": "v2.0.24",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/c508a879829976e30f05e16b96a7ed024ee82ce1",
+                "reference": "c508a879829976e30f05e16b96a7ed024ee82ce1",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +343,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
